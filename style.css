@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to bottom right,rgb(0, 0, 0),#222);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid rgb(3, 3, 3);
+    box-shadow: 0 20px 20px rgb(0, 0, 0.3);
+    margin-top: 4.0rem;
+}
+.elemento{
+    display: flex;
+}
+.inpt:focus{outline: none;}
+button{
+    width: 40px;
+    margin-left: 8px;
+    border: 2px solid rgb(43,43,58);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: #ccc;
+    color: #fff;
+}
+
+@keyframes slide{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.info{
+    margin-top: 40px;
+    background: lawngreen;
+    display: none;
+    width: 200px;
+    padding: 12px;
+    opacity: 0;
+    text-align: center;
+    transition: 0.15s;
+    animation: slide 1.5s linear forwards;
+}
